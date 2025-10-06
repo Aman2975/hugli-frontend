@@ -1,0 +1,383 @@
+/* Sticker Types Styles */
+
+.sticker-type {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.sticker-type:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+}
+
+.sticker-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #f8fafc;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.sticker-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.sticker-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.versatile-tag {
+  display: inline-block;
+  background-color: #f59e0b;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.standard-quantity {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.sticker-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.product-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-placeholder {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  border: 2px dashed #cbd5e1;
+}
+
+/* Sticker Mockup */
+.sticker-mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticker-examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sticker-vinyl,
+.sticker-paper,
+.sticker-transparent,
+.sticker-glow {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sticker-standard {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  border-radius: 4px;
+}
+
+.sticker-round {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  border-radius: 50%;
+}
+
+.sticker-straight {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  border-radius: 0;
+}
+
+.sticker-text,
+.sticker-text-small,
+.sticker-text-straight {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.sticker-subtext {
+  font-size: 0.4rem;
+  font-weight: 500;
+}
+
+.sticker-icon-mock {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.options-section {
+  margin-bottom: 2rem;
+}
+
+.options-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.sticker-type-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.sticker-type-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.sticker-type-option:hover {
+  background-color: #e2e8f0;
+}
+
+.sticker-type-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+
+.sticker-type-content {
+  flex: 1;
+}
+
+.sticker-type-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.3rem;
+}
+
+.sticker-type-description {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.size-section {
+  margin-bottom: 2rem;
+}
+
+.size-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.size-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.size-option {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.size-option:hover {
+  background-color: #e2e8f0;
+}
+
+.size-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.size-option input[type="radio"]:checked + .size-label {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.size-label {
+  color: #475569;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.quantity-section {
+  margin-bottom: 2rem;
+}
+
+.quantity-section label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.8rem;
+}
+
+.quantity-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #475569;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.quantity-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.get-quote-btn,
+.order-now-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.get-quote-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sticker-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sticker-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .image-placeholder {
+    min-height: 250px;
+  }
+
+  .size-options {
+    grid-template-columns: 1fr;
+  }
+
+  .sticker-examples {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .sticker-vinyl,
+  .sticker-paper,
+  .sticker-transparent,
+  .sticker-glow {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticker-header {
+    padding: 1.5rem;
+  }
+
+  .sticker-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .sticker-content {
+    padding: 1.5rem;
+  }
+
+  .product-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .get-quote-btn,
+.order-now-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .sticker-vinyl,
+  .sticker-paper,
+  .sticker-transparent,
+  .sticker-glow {
+    width: 60px;
+    height: 60px;
+  }
+}
