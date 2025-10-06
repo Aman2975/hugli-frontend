@@ -15,28 +15,28 @@ const VisitingCards = () => {
       id: 'standard-cards',
       name: 'Standard Visiting Cards',
       description: 'Professional standard visiting cards with various finishes',
-      icon: '💼',
+      image: '/images/visiting-cards.jpg',
       features: ['Professional Look', 'Various Finishes', 'Quick Delivery']
     },
     {
       id: 'premium-cards',
       name: 'Premium Visiting Cards',
       description: 'High-quality premium cards with luxury finishes',
-      icon: '💎',
+      image: '/images/letterheads.jpg',
       features: ['Premium Quality', 'Luxury Feel', 'Custom Design']
     },
     {
       id: 'metal-cards',
       name: 'Metal Visiting Cards',
       description: 'Unique metal cards for a distinctive impression',
-      icon: '🔗',
+      image: '/images/bill-books.webp',
       features: ['Unique Material', 'Distinctive Look', 'Durable']
     },
     {
       id: 'pvc-cards',
       name: 'PVC Visiting Cards',
       description: 'Durable PVC cards for frequent use',
-      icon: '💳',
+      image: '/images/files.jpg',
       features: ['Waterproof', 'Tear Resistant', 'Long Lasting']
     }
   ];
@@ -57,7 +57,9 @@ const VisitingCards = () => {
           <div className="products-grid">
             {products.map((product) => (
               <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
                 <p className="product-description">{product.description}</p>
                 <ul className="product-features">

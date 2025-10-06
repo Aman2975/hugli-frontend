@@ -7,61 +7,61 @@ const Products = () => {
     {
       name: 'Visiting Cards',
       description: 'Professional business cards in various styles and materials',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/visiting-cards.jpg',
       link: '/visiting-cards'
     },
     {
       name: 'Pamphlets & Posters',
       description: 'Marketing materials for promotional campaigns',
-      image: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop',
+      image: '/images/posters.jpeg',
       link: '/pamphlets-posters'
     },
     {
       name: 'Garment Tags',
       description: 'Custom tags and labels for clothing and textiles',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/tags.jpeg',
       link: '/garment-tags'
     },
     {
       name: 'Files',
       description: 'Document organization and filing solutions',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/files.jpg',
       link: '/files'
     },
     {
       name: 'Letter Heads',
       description: 'Professional letterhead designs for business correspondence',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/letterheads.jpg',
       link: '/letter-heads'
     },
     {
       name: 'Envelopes',
       description: 'Various sizes and types of envelopes for mailing',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/envelopes.webp',
       link: '/envelopes'
     },
     {
       name: 'Digital Paper Printing',
       description: 'High-quality digital printing on various paper types',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/digital-printing.jpg',
       link: '/digital-paper-printing'
     },
     {
       name: 'ATM Pouches',
       description: 'Secure pouches for ATM cash handling',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/atm-pouches.png',
       link: '/atm-pouches'
     },
     {
       name: 'Bill Books',
       description: 'Professional bill books for business transactions',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/bill-books.webp',
       link: '/bill-books'
     },
     {
       name: 'Stickers',
       description: 'Custom stickers with various cutting options',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop',
+      image: '/images/stickers.jpg',
       link: '/stickers'
     }
   ];
