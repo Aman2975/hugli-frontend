@@ -12,32 +12,60 @@ const GarmentTags = () => {
 
   const products = [
     {
-      id: 'woven-tags',
-      name: 'Woven Tags',
-      description: 'Premium woven tags for clothing and textiles',
-      icon: '🏷️',
-      features: ['Durable Woven', 'Custom Text', 'Professional Look']
+      id: 'thread-tags',
+      name: 'THREAD',
+      productCode: '1',
+      features: ['Thread-based attachment', 'Custom colors available'],
+      image: '/images/tags.jpeg'
     },
     {
-      id: 'printed-tags',
-      name: 'Printed Tags',
-      description: 'High-quality printed tags with custom designs',
-      icon: '🖨️',
-      features: ['Custom Design', 'Color Printing', 'Fast Production']
+      id: 'gloss-tags',
+      name: 'GLOSS',
+      productCode: '2',
+      features: ['High Gloss UV Coating', 'Premium finish'],
+      image: '/images/tags.jpeg'
     },
     {
-      id: 'leather-tags',
-      name: 'Leather Tags',
-      description: 'Premium leather tags for high-end garments',
-      icon: '🐄',
-      features: ['Premium Leather', 'Luxury Feel', 'Long Lasting']
+      id: 'matt-tags',
+      name: 'MATT',
+      productCode: '3',
+      features: ['350 GSM Paper', 'Matt Lamination'],
+      image: '/images/tags.jpeg'
     },
     {
-      id: 'fabric-tags',
-      name: 'Fabric Tags',
-      description: 'Soft fabric tags for comfortable wear',
-      icon: '👕',
-      features: ['Soft Material', 'Comfortable', 'Wash Resistant']
+      id: 'matt-uv-tags',
+      name: 'MATT LAMINATION + UV',
+      productCode: '4',
+      features: ['400 GSM Paper', 'Matt Lamination'],
+      image: '/images/tags.jpeg'
+    },
+    {
+      id: '800gsm-matt-texture',
+      name: '800 GSM + MATT + TEXTURE',
+      productCode: '5',
+      features: ['Available in 8 Texture', 'Premium quality'],
+      image: '/images/tags.jpeg'
+    },
+    {
+      id: '800gsm-matt',
+      name: '800 GSM + MATT',
+      productCode: '6',
+      features: ['Matt Lamination', 'Heavy weight'],
+      image: '/images/tags.jpeg'
+    },
+    {
+      id: '800gsm-matt-uv',
+      name: '800 GSM + MATT + UV',
+      productCode: '7',
+      features: ['MATT + UV', 'Enhanced durability'],
+      image: '/images/tags.jpeg'
+    },
+    {
+      id: 'pvc-tags',
+      name: 'PVC TAG',
+      productCode: '8',
+      features: ['PVC Material', 'Waterproof'],
+      image: '/images/tags.jpeg'
     }
   ];
 
@@ -54,21 +82,22 @@ const GarmentTags = () => {
       {/* Products Section */}
       <section className="garmenttags-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="garmenttags-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="garmenttags-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +107,10 @@ const GarmentTags = () => {
             <div className="contact-card">
               <h2>Custom Garment Tags</h2>
               <p>We can create custom tags to match your brand requirements</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

@@ -13,38 +13,42 @@ const BillBooks = () => {
   const products = [
     {
       id: 'a4-bill-book-2-copy',
-      name: 'A4 Bill Book - 2 Copy',
-      description: 'Professional A4 bill book with 2 carbon copies',
-      icon: '📊',
-      features: ['A4 Size', '2 Carbon Copies', 'Professional Format']
+      name: 'A4 BILL BOOK',
+      productCode: '1',
+      type: '2 Copy',
+      features: ['A4 Size', '2 Carbon Copies', 'Professional Format'],
+      image: '/images/billbooks.jpeg'
     },
     {
       id: 'a4-bill-book-3-copy',
-      name: 'A4 Bill Book - 3 Copy',
-      description: 'Professional A4 bill book with 3 carbon copies',
-      icon: '📋',
-      features: ['A4 Size', '3 Carbon Copies', 'Multi-Purpose']
+      name: 'A4 BILL BOOK',
+      productCode: '2',
+      type: '3 Copy',
+      features: ['A4 Size', '3 Carbon Copies', 'Multi-Purpose'],
+      image: '/images/billbooks.jpeg'
     },
     {
       id: 'receipt-book',
-      name: 'Receipt Book',
-      description: 'Small format receipt book for retail businesses',
-      icon: '🧾',
-      features: ['Compact Size', 'Quick Entries', 'Retail Ready']
+      name: 'RECEIPT BOOK',
+      productCode: '3',
+      type: 'Small Format',
+      features: ['Compact Size', 'Quick Entries', 'Retail Ready'],
+      image: '/images/billbooks.jpeg'
     },
     {
       id: 'invoice-book',
-      name: 'Invoice Book',
-      description: 'Professional invoice book for business transactions',
-      icon: '📄',
-      features: ['Professional Format', 'Business Grade', 'Custom Branding']
+      name: 'INVOICE BOOK',
+      productCode: '4',
+      type: 'Professional',
+      features: ['Professional Format', 'Business Grade', 'Custom Branding'],
+      image: '/images/billbooks.jpeg'
     }
   ];
 
   return (
-    <div className="billbooks-page">
+    <div className="bill-books-page">
       {/* Header Section */}
-      <section className="billbooks-header">
+      <section className="bill-books-header">
         <div className="container">
           <h1>Bill Books</h1>
           <p>Professional bill books for all your business transaction needs</p>
@@ -52,23 +56,25 @@ const BillBooks = () => {
       </section>
 
       {/* Products Section */}
-      <section className="billbooks-products">
+      <section className="bill-books-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="billbooks-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="billbooks-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-type">{product.type}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +84,10 @@ const BillBooks = () => {
             <div className="contact-card">
               <h2>Custom Bill Books Available</h2>
               <p>We can create custom formats to match your business requirements</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

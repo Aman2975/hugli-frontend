@@ -13,31 +13,35 @@ const PamphletsPosters = () => {
   const products = [
     {
       id: 'pamphlets',
-      name: 'Pamphlets',
-      description: 'High-quality pamphlets for marketing and information distribution',
-      icon: '📄',
-      features: ['Marketing Grade', 'Custom Design', 'Bulk Available']
+      name: 'PAMPHLETS',
+      productCode: '1',
+      type: 'Marketing Grade',
+      features: ['Custom Design', 'High Quality', 'Bulk Available'],
+      image: '/images/pamphlets-posters.jpeg'
     },
     {
       id: 'posters',
-      name: 'Posters',
-      description: 'Large format posters for advertising and promotional purposes',
-      icon: '🖼️',
-      features: ['Large Format', 'High Quality', 'Eye Catching']
+      name: 'POSTERS',
+      productCode: '2',
+      type: 'Large Format',
+      features: ['High Quality', 'Eye Catching', 'Durable Material'],
+      image: '/images/pamphlets-posters.jpeg'
     },
     {
       id: 'flyers',
-      name: 'Flyers',
-      description: 'Cost-effective flyers for promotional campaigns',
-      icon: '📋',
-      features: ['Cost Effective', 'Quick Printing', 'Versatile Use']
+      name: 'FLYERS',
+      productCode: '3',
+      type: 'Cost Effective',
+      features: ['Quick Printing', 'Versatile Use', 'Budget Friendly'],
+      image: '/images/pamphlets-posters.jpeg'
     },
     {
       id: 'brochures',
-      name: 'Brochures',
-      description: 'Professional brochures for detailed product information',
-      icon: '📖',
-      features: ['Professional Look', 'Detailed Info', 'Fold Options']
+      name: 'BROCHURES',
+      productCode: '4',
+      type: 'Professional',
+      features: ['Professional Look', 'Detailed Info', 'Fold Options'],
+      image: '/images/pamphlets-posters.jpeg'
     }
   ];
 
@@ -54,21 +58,23 @@ const PamphletsPosters = () => {
       {/* Products Section */}
       <section className="pamphlets-posters-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="pamphlets-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="pamphlets-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-type">{product.type}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +84,10 @@ const PamphletsPosters = () => {
             <div className="contact-card">
               <h2>Custom Marketing Materials</h2>
               <p>We can create custom pamphlets and posters for your marketing campaigns</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">500</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

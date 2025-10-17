@@ -13,31 +13,35 @@ const Stickers = () => {
   const products = [
     {
       id: 'vinyl-stickers',
-      name: 'Vinyl Stickers',
-      description: 'Durable vinyl stickers for outdoor use',
-      icon: '🏷️',
-      features: ['Weather Resistant', 'Long Lasting', 'Outdoor Safe']
+      name: 'VINYL STICKERS',
+      productCode: '1',
+      type: 'Weather Resistant',
+      features: ['Long Lasting', 'Outdoor Safe', 'Durable Material'],
+      image: '/images/stickers.jpeg'
     },
     {
       id: 'paper-stickers',
-      name: 'Paper Stickers',
-      description: 'Cost-effective paper stickers for indoor use',
-      icon: '📄',
-      features: ['Cost Effective', 'Quick Printing', 'Indoor Use']
+      name: 'PAPER STICKERS',
+      productCode: '2',
+      type: 'Cost Effective',
+      features: ['Quick Printing', 'Indoor Use', 'Budget Friendly'],
+      image: '/images/stickers.jpeg'
     },
     {
       id: 'transparent-stickers',
-      name: 'Transparent Stickers',
-      description: 'Clear transparent stickers for seamless application',
-      icon: '🔍',
-      features: ['Transparent', 'Seamless Look', 'Versatile Use']
+      name: 'TRANSPARENT STICKERS',
+      productCode: '3',
+      type: 'Clear Finish',
+      features: ['Seamless Look', 'Versatile Use', 'Invisible Edge'],
+      image: '/images/stickers.jpeg'
     },
     {
       id: 'die-cut-stickers',
-      name: 'Die Cut Stickers',
-      description: 'Custom shaped stickers with precise cutting',
-      icon: '✂️',
-      features: ['Custom Shapes', 'Precise Cutting', 'Unique Design']
+      name: 'DIE CUT STICKERS',
+      productCode: '4',
+      type: 'Custom Shapes',
+      features: ['Precise Cutting', 'Unique Design', 'Any Shape'],
+      image: '/images/stickers.jpeg'
     }
   ];
 
@@ -54,21 +58,23 @@ const Stickers = () => {
       {/* Products Section */}
       <section className="stickers-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="stickers-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="stickers-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-type">{product.type}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +84,10 @@ const Stickers = () => {
             <div className="contact-card">
               <h2>Custom Sticker Solutions</h2>
               <p>We can create custom stickers to match your specific requirements</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

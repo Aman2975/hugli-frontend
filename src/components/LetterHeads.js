@@ -12,32 +12,36 @@ const LetterHeads = () => {
 
   const products = [
     {
-      id: 'standard-letterhead',
-      name: 'Standard Letterhead',
-      description: 'Professional letterhead with company branding',
-      icon: '📄',
-      features: ['Company Logo', 'Professional Design', 'A4 Size']
+      id: 'letterhead-70gsm-maplitho',
+      name: 'Letter Head',
+      productCode: '1',
+      specifications: '70 GSM, Maplitho Paper',
+      features: ['Professional Quality', 'Standard Weight'],
+      image: '/images/letterheads.jpeg'
     },
     {
-      id: 'premium-letterhead',
-      name: 'Premium Letterhead',
-      description: 'High-quality letterhead with premium finishes',
-      icon: '✨',
-      features: ['Premium Quality', 'Custom Design', 'Luxury Feel']
+      id: 'letterhead-90gsm-sunshine',
+      name: 'Letter Head',
+      productCode: '2',
+      specifications: '90 GSM, Sunshine Paper',
+      features: ['Premium Quality', 'Bright White'],
+      image: '/images/letterheads.jpeg'
     },
     {
-      id: 'business-letterhead',
-      name: 'Business Letterhead',
-      description: 'Corporate letterhead for business correspondence',
-      icon: '💼',
-      features: ['Corporate Design', 'Professional Look', 'Brand Consistency']
+      id: 'letterhead-100gsm-bond',
+      name: 'Letter Head',
+      productCode: '3',
+      specifications: '100 GSM, Bond Paper',
+      features: ['Heavy Weight', 'Durable Quality'],
+      image: '/images/letterheads.jpeg'
     },
     {
-      id: 'custom-letterhead',
-      name: 'Custom Letterhead',
-      description: 'Fully customized letterhead to match your brand',
-      icon: '🎨',
-      features: ['Fully Custom', 'Unique Design', 'Brand Identity']
+      id: 'letterhead-100gsm-deo',
+      name: 'Letter Head',
+      productCode: '4',
+      specifications: '100 GSM, Deo Paper',
+      features: ['Heavy Weight', 'Smooth Finish'],
+      image: '/images/letterheads.jpeg'
     }
   ];
 
@@ -54,21 +58,23 @@ const LetterHeads = () => {
       {/* Products Section */}
       <section className="letterheads-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="letterheads-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="letterheads-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-specifications">{product.specifications}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +84,10 @@ const LetterHeads = () => {
             <div className="contact-card">
               <h2>Custom Letterhead Design</h2>
               <p>We can create custom letterheads to match your brand identity</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">500</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

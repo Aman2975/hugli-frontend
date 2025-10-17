@@ -14,30 +14,74 @@ const Envelopes = () => {
     {
       id: 'envelope-9x4',
       name: 'ENVELOPE - 9x4',
-      description: 'Standard office letter envelope',
-      icon: '✉️',
-      features: ['Standard Size', 'Office Use', 'Bulk Available']
+      productCode: '1',
+      dimensions: '9x4',
+      utility: 'For Office Letters',
+      features: ['Standard Office Size', 'Professional Quality'],
+      image: '/images/envelopes.jpeg'
     },
     {
       id: 'envelope-10x4',
-      name: 'ENVELOPE - 10x4',
-      description: 'Large office envelope for bigger documents',
-      icon: '📮',
-      features: ['Large Size', 'Document Safe', 'Professional']
+      name: 'ENVELOPE - 10.75x4.75',
+      productCode: '2',
+      dimensions: '10.75x4.75',
+      utility: 'For Office Letters',
+      features: ['Window Envelope', 'Large Office Size'],
+      image: '/images/envelopes.jpeg'
     },
     {
-      id: 'envelope-12x6',
-      name: 'ENVELOPE - 12x6',
-      description: 'Extra large envelope for reports and catalogs',
-      icon: '📋',
-      features: ['Extra Large', 'Catalog Size', 'Heavy Duty']
+      id: 'envelope-9x4-2',
+      name: 'ENVELOPE - 9.70x4.20',
+      productCode: '3',
+      dimensions: '9.70x4.20',
+      utility: 'For Office Letters',
+      features: ['Custom Office Size', 'Pointed Flap'],
+      image: '/images/envelopes.jpeg'
     },
     {
-      id: 'envelope-a4',
-      name: 'ENVELOPE - A4',
-      description: 'A4 size envelope for international correspondence',
-      icon: '📄',
-      features: ['A4 Size', 'International', 'Premium Quality']
+      id: 'envelope-5x7',
+      name: 'ENVELOPE - 5x7',
+      productCode: '4',
+      dimensions: '5x7',
+      utility: 'For Invitations / Cards',
+      features: ['Invitation Size', 'Card Envelope'],
+      image: '/images/envelopes.jpeg'
+    },
+    {
+      id: 'envelope-6x8',
+      name: 'ENVELOPE - 6x8',
+      productCode: '5',
+      dimensions: '6x8',
+      utility: 'For Invitations / Cards',
+      features: ['Medium Invitation', 'Decorative Design'],
+      image: '/images/envelopes.jpeg'
+    },
+    {
+      id: 'envelope-8x10',
+      name: 'ENVELOPE - 8.60x10.60',
+      productCode: '6',
+      dimensions: '8.60x10.60',
+      utility: 'For Brochures / Files',
+      features: ['Large Document Size', 'File Envelope'],
+      image: '/images/envelopes.jpeg'
+    },
+    {
+      id: 'envelope-9x12',
+      name: 'ENVELOPE - 9.40x12.40',
+      productCode: '7',
+      dimensions: '9.40x12.40',
+      utility: 'For Brochures / Files',
+      features: ['Extra Large Size', 'Button Closure'],
+      image: '/images/envelopes.jpeg'
+    },
+    {
+      id: 'gift-envelope',
+      name: 'GIFT ENVELOPE',
+      productCode: '8',
+      dimensions: 'Various Sizes',
+      utility: 'For Gifting',
+      features: ['Decorative Design', 'Festive Colors'],
+      image: '/images/envelopes.jpeg'
     }
   ];
 
@@ -54,21 +98,24 @@ const Envelopes = () => {
       {/* Products Section */}
       <section className="envelopes-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="envelopes-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="envelopes-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-dimensions">{product.dimensions}</div>
+                <div className="product-utility">{product.utility}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +125,10 @@ const Envelopes = () => {
             <div className="contact-card">
               <h2>Need Custom Envelopes?</h2>
               <p>Contact us for custom sizing and branding options</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

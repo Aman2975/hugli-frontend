@@ -12,32 +12,44 @@ const Files = () => {
 
   const products = [
     {
-      id: 'ring-binder',
-      name: 'Ring Binder Files',
-      description: 'Professional ring binder files for document organization',
-      icon: '📁',
-      features: ['Durable Rings', 'Professional Look', 'Multiple Sizes']
+      id: 'pvc-file-small',
+      name: 'PVC FILE',
+      productCode: '1',
+      size: 'SMALL SIZE',
+      features: ['300 Micron PP Sheet', '9"x12"'],
+      image: '/images/files.jpeg'
     },
     {
-      id: 'clip-files',
-      name: 'Clip Files',
-      description: 'Convenient clip files for easy document access',
-      icon: '📎',
-      features: ['Easy Access', 'Secure Clips', 'Compact Design']
+      id: 'pvc-file-big',
+      name: 'PVC FILE',
+      productCode: '2',
+      size: 'BIG SIZE',
+      features: ['300 Micron PP Sheet', '9.5"x12.5"'],
+      image: '/images/files.jpeg'
     },
     {
-      id: 'box-files',
-      name: 'Box Files',
-      description: 'Storage box files for bulk document storage',
-      icon: '📦',
-      features: ['Bulk Storage', 'Durable Material', 'Organized Storage']
+      id: 'sbs-file-small',
+      name: 'SBS FILE',
+      productCode: '3',
+      size: 'SMALL SIZE',
+      features: ['260 Gsm SBS Paper', '9"x12"'],
+      image: '/images/files.jpeg'
     },
     {
-      id: 'folder-files',
-      name: 'Folder Files',
-      description: 'Standard folder files for everyday use',
-      icon: '🗂️',
-      features: ['Standard Size', 'Daily Use', 'Cost Effective']
+      id: 'sbs-file-big',
+      name: 'SBS FILE',
+      productCode: '4',
+      size: 'BIG SIZE',
+      features: ['320 Gsm SBS Paper', '9.5"x12.5"'],
+      image: '/images/files.jpeg'
+    },
+    {
+      id: 'pvc-clip',
+      name: 'PVC CLIP',
+      productCode: '5',
+      size: 'Available in 3 Varieties',
+      features: ['PVC Material', 'Durable Design'],
+      image: '/images/files.jpeg'
     }
   ];
 
@@ -54,21 +66,23 @@ const Files = () => {
       {/* Products Section */}
       <section className="files-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="files-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="files-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-size">{product.size}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +92,10 @@ const Files = () => {
             <div className="contact-card">
               <h2>Custom File Solutions</h2>
               <p>We can create custom files to match your specific requirements</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>

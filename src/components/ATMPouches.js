@@ -13,31 +13,35 @@ const ATMPouches = () => {
   const products = [
     {
       id: 'atm-pouch-matt',
-      name: 'ATM Pouch - Matt Lamination',
-      description: 'ATM pouch with matt lamination finish for professional appearance',
-      icon: '💳',
-      features: ['Matt Lamination', 'Professional Look', 'Secure Design']
+      name: 'ATM POUCH',
+      productCode: '1',
+      lamination: 'Matt Lamination',
+      features: ['Professional Look', 'Secure Design', 'Durable Material'],
+      image: '/images/atm-pouches.jpeg'
     },
     {
       id: 'atm-pouch-gloss',
-      name: 'ATM Pouch - Gloss Lamination',
-      description: 'ATM pouch with glossy finish for premium appearance',
-      icon: '✨',
-      features: ['Gloss Lamination', 'Premium Look', 'Durable Finish']
+      name: 'ATM POUCH',
+      productCode: '2',
+      lamination: 'Gloss Lamination',
+      features: ['Premium Look', 'Shiny Finish', 'High Quality'],
+      image: '/images/atm-pouches.jpeg'
     },
     {
       id: 'atm-pouch-soft-touch',
-      name: 'ATM Pouch - Soft Touch',
-      description: 'ATM pouch with soft touch finish for luxury feel',
-      icon: '👆',
-      features: ['Soft Touch Finish', 'Luxury Feel', 'High Quality']
+      name: 'ATM POUCH',
+      productCode: '3',
+      lamination: 'Soft Touch Finish',
+      features: ['Luxury Feel', 'Smooth Texture', 'Premium Quality'],
+      image: '/images/atm-pouches.jpeg'
     },
     {
       id: 'atm-pouch-uv',
-      name: 'ATM Pouch - UV Coating',
-      description: 'ATM pouch with UV coating for enhanced protection',
-      icon: '🛡️',
-      features: ['UV Coating', 'Enhanced Protection', 'Long Lasting']
+      name: 'ATM POUCH',
+      productCode: '4',
+      lamination: 'UV Coating',
+      features: ['Enhanced Protection', 'Long Lasting', 'Weather Resistant'],
+      image: '/images/atm-pouches.jpeg'
     }
   ];
 
@@ -54,21 +58,23 @@ const ATMPouches = () => {
       {/* Products Section */}
       <section className="atm-pouches-products">
         <div className="container">
-          <div className="products-grid">
+          <div className="atm-products-grid">
             {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-icon">{product.icon}</div>
+              <div key={product.id} className="atm-product-card">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
                 <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
+                <div className="product-lamination">{product.lamination}</div>
+                <div className="product-code">
+                  <span className="code-label">Product Code:</span>
+                  <span className="code-number">{product.productCode}</span>
+                </div>
                 <ul className="product-features">
                   {product.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <div className="minimum-quantity">
-                  <span className="min-qty-text">Minimum Order: </span>
-                  <span className="min-qty-number">1000</span>
-                </div>
               </div>
             ))}
           </div>
@@ -78,6 +84,10 @@ const ATMPouches = () => {
             <div className="contact-card">
               <h2>Need ATM Pouches?</h2>
               <p>Contact us for custom ATM pouches with your specifications</p>
+              <div className="minimum-quantity">
+                <span className="min-qty-text">Minimum Order: </span>
+                <span className="min-qty-number">1000</span>
+              </div>
               <button className="contact-btn" onClick={handleContactUs}>
                 Contact Us
               </button>
