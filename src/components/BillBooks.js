@@ -17,7 +17,7 @@ const BillBooks = () => {
       productCode: '1',
       type: '2 Copy',
       features: ['A4 Size', '2 Carbon Copies', 'Professional Format'],
-      image: '/images/billbooks.jpeg'
+      image: '/images/bill_books/1.jpg'
     },
     {
       id: 'a4-bill-book-3-copy',
@@ -25,7 +25,7 @@ const BillBooks = () => {
       productCode: '2',
       type: '3 Copy',
       features: ['A4 Size', '3 Carbon Copies', 'Multi-Purpose'],
-      image: '/images/billbooks.jpeg'
+      image: '/images/bill_books/2.jpg'
     },
     {
       id: 'receipt-book',
@@ -33,7 +33,7 @@ const BillBooks = () => {
       productCode: '3',
       type: 'Small Format',
       features: ['Compact Size', 'Quick Entries', 'Retail Ready'],
-      image: '/images/billbooks.jpeg'
+      image: '/images/bill_books/3.jpg'
     },
     {
       id: 'invoice-book',
@@ -41,7 +41,7 @@ const BillBooks = () => {
       productCode: '4',
       type: 'Professional',
       features: ['Professional Format', 'Business Grade', 'Custom Branding'],
-      image: '/images/billbooks.jpeg'
+      image: '/images/bill_books/4.jpg'
     }
   ];
 

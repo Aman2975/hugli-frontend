@@ -17,7 +17,7 @@ const ATMPouches = () => {
       productCode: '1',
       lamination: 'Matt Lamination',
       features: ['Professional Look', 'Secure Design', 'Durable Material'],
-      image: '/images/atm-pouches.jpeg'
+      image: '/images/atm_pouches/1.jpg'
     },
     {
       id: 'atm-pouch-gloss',
@@ -25,7 +25,7 @@ const ATMPouches = () => {
       productCode: '2',
       lamination: 'Gloss Lamination',
       features: ['Premium Look', 'Shiny Finish', 'High Quality'],
-      image: '/images/atm-pouches.jpeg'
+      image: '/images/atm_pouches/2.jpg'
     },
     {
       id: 'atm-pouch-soft-touch',
@@ -33,7 +33,7 @@ const ATMPouches = () => {
       productCode: '3',
       lamination: 'Soft Touch Finish',
       features: ['Luxury Feel', 'Smooth Texture', 'Premium Quality'],
-      image: '/images/atm-pouches.jpeg'
+      image: '/images/atm_pouches/3.jpg'
     },
     {
       id: 'atm-pouch-uv',
@@ -41,7 +41,7 @@ const ATMPouches = () => {
       productCode: '4',
       lamination: 'UV Coating',
       features: ['Enhanced Protection', 'Long Lasting', 'Weather Resistant'],
-      image: '/images/atm-pouches.jpeg'
+      image: '/images/atm_pouches/4.jpg'
     }
   ];
 

@@ -17,7 +17,7 @@ const LetterHeads = () => {
       productCode: '1',
       specifications: '70 GSM, Maplitho Paper',
       features: ['Professional Quality', 'Standard Weight'],
-      image: '/images/letterheads.jpeg'
+      image: '/images/latter_heads/1.png'
     },
     {
       id: 'letterhead-90gsm-sunshine',
@@ -25,7 +25,7 @@ const LetterHeads = () => {
       productCode: '2',
       specifications: '90 GSM, Sunshine Paper',
       features: ['Premium Quality', 'Bright White'],
-      image: '/images/letterheads.jpeg'
+      image: '/images/latter_heads/2.png'
     },
     {
       id: 'letterhead-100gsm-bond',
@@ -33,7 +33,7 @@ const LetterHeads = () => {
       productCode: '3',
       specifications: '100 GSM, Bond Paper',
       features: ['Heavy Weight', 'Durable Quality'],
-      image: '/images/letterheads.jpeg'
+      image: '/images/latter_heads/3.png'
     },
     {
       id: 'letterhead-100gsm-deo',
@@ -41,7 +41,7 @@ const LetterHeads = () => {
       productCode: '4',
       specifications: '100 GSM, Deo Paper',
       features: ['Heavy Weight', 'Smooth Finish'],
-      image: '/images/letterheads.jpeg'
+      image: '/images/latter_heads/4.png'
     }
   ];
 

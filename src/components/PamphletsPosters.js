@@ -17,7 +17,7 @@ const PamphletsPosters = () => {
       productCode: '1',
       type: 'Marketing Grade',
       features: ['Custom Design', 'High Quality', 'Bulk Available'],
-      image: '/images/pamphlets-posters.jpeg'
+      image: '/images/posters/pamplets.png'
     },
     {
       id: 'posters',
@@ -25,7 +25,7 @@ const PamphletsPosters = () => {
       productCode: '2',
       type: 'Large Format',
       features: ['High Quality', 'Eye Catching', 'Durable Material'],
-      image: '/images/pamphlets-posters.jpeg'
+      image: '/images/posters/poster.png'
     },
     {
       id: 'flyers',
@@ -33,7 +33,7 @@ const PamphletsPosters = () => {
       productCode: '3',
       type: 'Cost Effective',
       features: ['Quick Printing', 'Versatile Use', 'Budget Friendly'],
-      image: '/images/pamphlets-posters.jpeg'
+      image: '/images/posters/flyer.png'
     },
     {
       id: 'brochures',
@@ -41,7 +41,7 @@ const PamphletsPosters = () => {
       productCode: '4',
       type: 'Professional',
       features: ['Professional Look', 'Detailed Info', 'Fold Options'],
-      image: '/images/pamphlets-posters.jpeg'
+      image: '/images/posters/brouches.png'
     }
   ];
 

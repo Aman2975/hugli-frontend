@@ -21,7 +21,7 @@ const VisitingCards = () => {
           name: 'METAL CARDS',
           productCode: '1',
           features: ['Sheet Color: 8 Types', 'Die Cut Option: Any Shape'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_30.png'
         }
       ]
     },
@@ -35,35 +35,35 @@ const VisitingCards = () => {
           name: '800 GSM + VELVET',
           productCode: '2',
           features: ['Lamination Type: Velvet', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_21.png'
         },
         {
           id: '800gsm-matt',
           name: '800 GSM + MATT',
           productCode: '3',
           features: ['Lamination Type: Matt', 'UV Option: Available', 'Foil Option: Available', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_25.png'
         },
         {
           id: '800gsm-black',
           name: '800 GSM BLACK SHEET (WITH WHITE INK)',
           productCode: '4',
           features: ['Lamination: Not Available', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_22.png'
         },
         {
           id: '800gsm-craft',
           name: '800 GSM CRAFT PAPER',
           productCode: '5',
           features: ['Lamination: Not Available', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_23.png'
         },
         {
           id: '800gsm-texture',
           name: '800 GSM + TEXTURE',
           productCode: '6',
           features: ['Lamination Type: Matt', 'Texture Option: Available (8 Types)', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_24.png'
         }
       ]
     },
@@ -77,21 +77,21 @@ const VisitingCards = () => {
           name: '500 GSM + VELVET',
           productCode: '7',
           features: ['Velvet Lamination', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (36 Types)', 'Customized Die Cut Available'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_9.png'
         },
         {
           id: '500gsm-matt',
           name: '500 GSM + MATT',
           productCode: '8',
           features: ['Matt Lamination', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_10.png'
         },
         {
           id: '500gsm-drip',
           name: '500 GSM + DRIP-OFF',
           productCode: '9',
           features: ['Drip-off', 'Die Cut Option: Available (36 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_11.png'
         }
       ]
     },
@@ -105,21 +105,91 @@ const VisitingCards = () => {
           name: '800 MICRON FUSING',
           productCode: '10',
           features: ['Sheet Color: White, Gold, Silver', 'UV Option: Available', 'Foil Option: Available (5 Types)', 'Die Cut Option: Available (2 Types)'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_26.png'
         },
         {
           id: '250micron-transparent',
           name: '250 MICRON TRANSPARENT SHEET',
           productCode: '11',
           features: ['250 Micron Transparent NT Sheet', 'Die Cut Option: Die No. 1 only'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_27.png'
         },
         {
           id: '180micron',
           name: '180 MICRON',
           productCode: '12',
           features: ['180 Micron White NT Sheet', 'Gloss UV Coating Option: Available'],
-          image: '/images/visiting-cards.jpg'
+          image: '/images/visiting/visiting_29.png'
+        }
+      ]
+    },
+    {
+      id: 'regular-cards',
+      title: 'REGULAR VISITING CARDS',
+      quantity: 'QTY. 1000 CARDS',
+      products: [
+        {
+          id: 'matt-lamination-uv',
+          name: 'MATT LAMINATION + UV',
+          productCode: '14',
+          features: ['Matt Lamination (Premium Thermal Quality)', 'UV Option: Available'],
+          image: '/images/visiting/visiting_2.png'
+        },
+        {
+          id: 'matt-lamination',
+          name: 'MATT LAMINATION',
+          productCode: '15',
+          features: ['Matt Lamination (Premium Thermal Quality)'],
+          image: '/images/visiting/visiting_3.png'
+        },
+        {
+          id: 'matt-lamination-texture',
+          name: 'MATT LAMINATION + TEXTURE',
+          productCode: '16',
+          features: ['Matt Lamination (Premium Thermal Quality)', 'Texture Option: Available (8 Types)'],
+          image: '/images/visiting/visiting_4.png'
+        },
+        {
+          id: 'gloss-coated-texture',
+          name: 'GLOSS COATED + TEXTURE',
+          productCode: '17',
+          features: ['Gloss UV Coating', 'Texture Option: Available (8 Types)'],
+          image: '/images/visiting/visiting_5.png'
+        },
+        {
+          id: 'gloss-lamination',
+          name: 'GLOSS LAMINATION',
+          productCode: '18',
+          features: ['Gloss Lamination (Premium Thermal Quality)'],
+          image: '/images/visiting/visiting_6.png'
+        },
+        {
+          id: 'gloss-coated',
+          name: 'GLOSS COATED',
+          productCode: '19',
+          features: ['Gloss UV Coating'],
+          image: '/images/visiting/visiting_7.png'
+        },
+        {
+          id: 'without-lamination',
+          name: 'WITHOUT LAMINATION',
+          productCode: '20',
+          features: ['Without Lamination Card'],
+          image: '/images/visiting/visiting_15.png'
+        },
+        {
+          id: 'gloss-coated-small',
+          name: 'GLOSS COATED (SMALL)',
+          productCode: '21',
+          features: ['Small Size', 'Gloss UV Coating'],
+          image: '/images/visiting/visiting_16.png'
+        },
+        {
+          id: 'without-lamination-small',
+          name: 'WITHOUT LAMINATION (SMALL)',
+          productCode: '22',
+          features: ['Small Size', 'Without Lamination Card'],
+          image: '/images/visiting/visiting_17.png'
         }
       ]
     }

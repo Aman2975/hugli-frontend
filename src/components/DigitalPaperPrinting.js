@@ -15,28 +15,28 @@ const DigitalPaperPrinting = () => {
       name: 'LETTER HEAD PAPER',
       productCode: '1',
       features: ['Professional Design', 'Custom Branding', 'High Quality'],
-      image: '/images/digital-printing.jpeg'
+      image: '/images/digital_papers/letter head digital.jpg'
     },
     {
       id: 'art-paper',
       name: 'ART PAPER',
       productCode: '2',
       features: ['Smooth Finish', 'Premium Quality', 'High Resolution'],
-      image: '/images/digital-printing.jpeg'
+      image: '/images/digital_papers/art paper.jpg'
     },
     {
       id: 'texture-paper',
       name: 'TEXTURE PAPER',
       productCode: '3',
       features: ['Textured Surface', 'Unique Feel', 'Premium Finish'],
-      image: '/images/digital-printing.jpeg'
+      image: '/images/digital_papers/texture.jpg'
     },
     {
       id: 'metallic-paper',
       name: 'METALLIC PAPER',
       productCode: '4',
       features: ['Shiny Metallic Finish', 'Luxury Look', 'Eye-catching'],
-      image: '/images/digital-printing.jpeg'
+      image: '/images/digital_papers/golden.jpg'
     },
     {
       id: 'nt-pvc-sheets',
@@ -50,7 +50,7 @@ const DigitalPaperPrinting = () => {
       name: 'PAPER GUMMING',
       productCode: '6',
       features: ['Self-Adhesive', 'Easy Application', 'Strong Bond'],
-      image: '/images/digital-printing.jpeg'
+      image: '/images/digital_papers/gumming.jpg'
     },
     {
       id: 'pvc-gumming',

@@ -17,7 +17,7 @@ const Stickers = () => {
       productCode: '1',
       type: 'Weather Resistant',
       features: ['Long Lasting', 'Outdoor Safe', 'Durable Material'],
-      image: '/images/stickers.jpeg'
+      image: '/images/stickers/1.jpg'
     },
     {
       id: 'paper-stickers',
@@ -25,7 +25,7 @@ const Stickers = () => {
       productCode: '2',
       type: 'Cost Effective',
       features: ['Quick Printing', 'Indoor Use', 'Budget Friendly'],
-      image: '/images/stickers.jpeg'
+      image: '/images/stickers/2.jpg'
     },
     {
       id: 'transparent-stickers',
@@ -33,7 +33,7 @@ const Stickers = () => {
       productCode: '3',
       type: 'Clear Finish',
       features: ['Seamless Look', 'Versatile Use', 'Invisible Edge'],
-      image: '/images/stickers.jpeg'
+      image: '/images/stickers/4.jpg'
     },
     {
       id: 'die-cut-stickers',
@@ -41,7 +41,7 @@ const Stickers = () => {
       productCode: '4',
       type: 'Custom Shapes',
       features: ['Precise Cutting', 'Unique Design', 'Any Shape'],
-      image: '/images/stickers.jpeg'
+      image: '/images/stickers/3.jpg'
     }
   ];
 

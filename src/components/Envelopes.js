@@ -18,7 +18,7 @@ const Envelopes = () => {
       dimensions: '9x4',
       utility: 'For Office Letters',
       features: ['Standard Office Size', 'Professional Quality'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/1.png'
     },
     {
       id: 'envelope-10x4',
@@ -27,7 +27,7 @@ const Envelopes = () => {
       dimensions: '10.75x4.75',
       utility: 'For Office Letters',
       features: ['Window Envelope', 'Large Office Size'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/2.png'
     },
     {
       id: 'envelope-9x4-2',
@@ -36,7 +36,7 @@ const Envelopes = () => {
       dimensions: '9.70x4.20',
       utility: 'For Office Letters',
       features: ['Custom Office Size', 'Pointed Flap'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/3.png'
     },
     {
       id: 'envelope-5x7',
@@ -45,7 +45,7 @@ const Envelopes = () => {
       dimensions: '5x7',
       utility: 'For Invitations / Cards',
       features: ['Invitation Size', 'Card Envelope'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/4.png'
     },
     {
       id: 'envelope-6x8',
@@ -54,7 +54,7 @@ const Envelopes = () => {
       dimensions: '6x8',
       utility: 'For Invitations / Cards',
       features: ['Medium Invitation', 'Decorative Design'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/5.png'
     },
     {
       id: 'envelope-8x10',
@@ -63,7 +63,7 @@ const Envelopes = () => {
       dimensions: '8.60x10.60',
       utility: 'For Brochures / Files',
       features: ['Large Document Size', 'File Envelope'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/7.png'
     },
     {
       id: 'envelope-9x12',
@@ -72,7 +72,7 @@ const Envelopes = () => {
       dimensions: '9.40x12.40',
       utility: 'For Brochures / Files',
       features: ['Extra Large Size', 'Button Closure'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/1.png'
     },
     {
       id: 'gift-envelope',
@@ -81,7 +81,7 @@ const Envelopes = () => {
       dimensions: 'Various Sizes',
       utility: 'For Gifting',
       features: ['Decorative Design', 'Festive Colors'],
-      image: '/images/envelopes.jpeg'
+      image: '/images/envelopes/7.png'
     }
   ];
 

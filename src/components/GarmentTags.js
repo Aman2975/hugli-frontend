@@ -16,56 +16,56 @@ const GarmentTags = () => {
       name: 'THREAD',
       productCode: '1',
       features: ['Thread-based attachment', 'Custom colors available'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/1.png'
     },
     {
       id: 'gloss-tags',
       name: 'GLOSS',
       productCode: '2',
       features: ['High Gloss UV Coating', 'Premium finish'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/2.png'
     },
     {
       id: 'matt-tags',
       name: 'MATT',
       productCode: '3',
       features: ['350 GSM Paper', 'Matt Lamination'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/3.png'
     },
     {
       id: 'matt-uv-tags',
       name: 'MATT LAMINATION + UV',
       productCode: '4',
       features: ['400 GSM Paper', 'Matt Lamination'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/4.png'
     },
     {
       id: '800gsm-matt-texture',
       name: '800 GSM + MATT + TEXTURE',
       productCode: '5',
       features: ['Available in 8 Texture', 'Premium quality'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/5.png'
     },
     {
       id: '800gsm-matt',
       name: '800 GSM + MATT',
       productCode: '6',
       features: ['Matt Lamination', 'Heavy weight'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/6.png'
     },
     {
       id: '800gsm-matt-uv',
       name: '800 GSM + MATT + UV',
       productCode: '7',
       features: ['MATT + UV', 'Enhanced durability'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/7.png'
     },
     {
       id: 'pvc-tags',
       name: 'PVC TAG',
       productCode: '8',
       features: ['PVC Material', 'Waterproof'],
-      image: '/images/tags.jpeg'
+      image: '/images/garment_tags/10.png'
     }
   ];
 

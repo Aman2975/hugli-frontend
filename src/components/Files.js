@@ -17,7 +17,7 @@ const Files = () => {
       productCode: '1',
       size: 'SMALL SIZE',
       features: ['300 Micron PP Sheet', '9"x12"'],
-      image: '/images/files.jpeg'
+      image: '/images/files/1.png'
     },
     {
       id: 'pvc-file-big',
@@ -25,7 +25,7 @@ const Files = () => {
       productCode: '2',
       size: 'BIG SIZE',
       features: ['300 Micron PP Sheet', '9.5"x12.5"'],
-      image: '/images/files.jpeg'
+      image: '/images/files/2.png'
     },
     {
       id: 'sbs-file-small',
@@ -33,7 +33,7 @@ const Files = () => {
       productCode: '3',
       size: 'SMALL SIZE',
       features: ['260 Gsm SBS Paper', '9"x12"'],
-      image: '/images/files.jpeg'
+      image: '/images/files/3.png'
     },
     {
       id: 'sbs-file-big',
@@ -41,7 +41,7 @@ const Files = () => {
       productCode: '4',
       size: 'BIG SIZE',
       features: ['320 Gsm SBS Paper', '9.5"x12.5"'],
-      image: '/images/files.jpeg'
+      image: '/images/files/4.png'
     },
     {
       id: 'pvc-clip',
@@ -49,7 +49,7 @@ const Files = () => {
       productCode: '5',
       size: 'Available in 3 Varieties',
       features: ['PVC Material', 'Durable Design'],
-      image: '/images/files.jpeg'
+      image: '/images/files/5.png'
     }
   ];
 
