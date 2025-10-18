@@ -74,12 +74,12 @@
 }
 
 .pamphlets-product-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(239, 118, 4, 0.15);
   border-radius: 12px;
   padding: 0.8rem;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.1);
-  border: 1px solid rgba(13, 110, 253, 0.1);
+  box-shadow: 0 4px 16px rgba(139, 90, 43, 0.15);
+  border: 1px solid rgba(139, 90, 43, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
