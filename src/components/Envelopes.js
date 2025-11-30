@@ -27,7 +27,7 @@ const Envelopes = () => {
       dimensions: '10.75x4.75',
       utility: 'For Office Letters',
       features: ['Window Envelope', 'Large Office Size'],
-      image: '/images/envelopes/2.png'
+      image: '/images/envelopes/2.jpeg'
     },
     {
       id: 'envelope-9x4-2',
@@ -36,7 +36,7 @@ const Envelopes = () => {
       dimensions: '9.70x4.20',
       utility: 'For Office Letters',
       features: ['Custom Office Size', 'Pointed Flap'],
-      image: '/images/envelopes/3.png'
+      image: '/images/envelopes/3.jpeg'
     },
     {
       id: 'envelope-5x7',
