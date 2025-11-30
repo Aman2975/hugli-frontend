@@ -17,6 +17,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
+        <img src="/images/logo.png" className="logo-image" />
           <h1>Hugli Printing Press</h1>
         </Link>
         
